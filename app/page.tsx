@@ -13,7 +13,7 @@ export default function Home() {
     <div className='flex flex-col w-[80%] mx-auto gap-6'>
       <div className='pt-4'>
         <h1 className='text-2xl font-bold last:text-center text-white'>
-          Tip N Tax
+          Tip N Tax - Canada
         </h1>
       </div>
       <InputSection onAmountChange={setAmount} />
