@@ -14,6 +14,7 @@ interface InputSectionProps {
 }
 
 const TipSection: React.FC<InputSectionProps> = ({ onAmountChange }) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isFocused, setIsFocused] = useState(false);
   const [selectedTip, setSelectedTip] = useState(18);
 
