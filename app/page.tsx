@@ -1,7 +1,6 @@
 'use client';
 
 import InputSection from '@/components/InputSection';
-import LocationSelection from '@/components/LocationSelection';
 import ResultsSection from '@/components/ResultsSection';
 import TipSection from '@/components/TipSection';
 import { useState } from 'react';
@@ -19,11 +18,7 @@ export default function Home() {
       </div>
       <InputSection onAmountChange={setAmount} />
       <TipSection onAmountChange={setTipAmount} />
-      <ResultsSection
-        baseAmount={amount}
-        tipPercentage={tipAmount}
-        taxRate={0.1}
-      />
+      <ResultsSection baseAmount={amount} tipPercentage={tipAmount} />
     </div>
   );
 }

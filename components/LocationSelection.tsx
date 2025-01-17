@@ -44,7 +44,7 @@ export default function LocationSelection({
     <div className='w-full max-w-sm'>
       <Label
         htmlFor='province-select'
-        className='block text-lg font-medium pl-4 0 mb-2'
+        className='block text-lg text-white pl-4 0 mb-2'
       >
         {label}
       </Label>

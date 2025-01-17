@@ -93,7 +93,7 @@ const TipSection: React.FC<InputSectionProps> = ({ onAmountChange }) => {
       }}
     >
       <div className='text-center mb-5'>
-        <span className='text-2xl font-bold text-white'>
+        <span className='text-xl font-bold text-white'>
           {selectedTip === 0 ? 'Not Required' : `Tip: ${selectedTip}%`}
         </span>
       </div>
