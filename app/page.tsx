@@ -10,7 +10,7 @@ export default function Home() {
   const [tipAmount, setTipAmount] = useState<number>(18);
 
   return (
-    <div className='flex flex-col w-[80%] mx-auto gap-6'>
+    <div className='flex flex-col lg:max-w-[30rem] w-[calc(100vw-2.5rem)] mx-auto gap-5'>
       <div className='pt-4'>
         <h1 className='text-2xl font-bold last:text-center text-white'>
           Tip N Tax - Canada

@@ -66,16 +66,16 @@ const TipSection: React.FC<InputSectionProps> = ({ onAmountChange }) => {
 
   return (
     <motion.div
-      className='flex flex-col items-center pt-5 pb-5 px-4 rounded-3xl'
+      className='flex flex-col items-center pt-5 pb-5 px-4 rounded-3xl border-2 border-gray-700'
       animate={{
         background: isFocused
           ? [
-              'linear-gradient(0deg, rgb(147 197 253 / 0.7), rgb(59 130 246))',
-              'linear-gradient(180deg, rgb(147 197 253 / 0.7), rgb(59 130 246))',
+              'linear-gradient(0deg, rgb(147 197 253 / 0.6), rgb(17, 24, 39))',
+              'linear-gradient(180deg, rgb(147 197 253 / 0.6), rgb(17, 24, 39))',
             ]
           : [
-              'linear-gradient(180deg, rgb(147 197 253 / 0.7), rgb(59 130 246))',
-              'linear-gradient(0deg, rgb(147 197 253 / 0.7), rgb(59 130 246))',
+              'linear-gradient(180deg, rgb(147 197 253 / 0.6), rgb(17, 24, 39))',
+              'linear-gradient(0deg, rgb(147 197 253 / 0.6), rgb(17, 24, 39))',
             ],
         boxShadow: isFocused
           ? [
@@ -110,7 +110,7 @@ const TipSection: React.FC<InputSectionProps> = ({ onAmountChange }) => {
           ${
             selectedTip === tip.value
               ? 'bg-blue-600 text-white shadow-lg scale-110'
-              : 'bg-blue-100 text-blue-600 hover:bg-blue-200'
+              : 'bg-blue-100 text-grey-900 hover:bg-blue-200'
           }
             `}
               >

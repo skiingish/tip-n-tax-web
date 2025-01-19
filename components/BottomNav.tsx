@@ -2,12 +2,12 @@
 
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { Camera, Cog, Calculator } from 'lucide-react';
+import { Cog, Calculator } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const navItems = [
-  { icon: Calculator, label: 'Home', href: '/' },
-  { icon: Camera, label: 'Camera', href: '/camera' },
+  { icon: Calculator, label: 'Calculator', href: '/' },
+  //{ icon: Camera, label: 'Camera', href: '/camera' },
   { icon: Cog, label: 'Settings', href: '/settings' },
 ];
 
@@ -23,7 +23,7 @@ export default function BottomNav() {
             <li key={item.href} className='relative'>
               <Link
                 href={item.href}
-                className={`flex flex-col items-center pt-2 pb-1 text-xs ${
+                className={`flex flex-col items-center pt-2 pb-2 text-xs ${
                   isActive ? 'text-blue-500' : 'text-gray-500'
                 }`}
               >
@@ -32,7 +32,7 @@ export default function BottomNav() {
               </Link>
               {isActive && (
                 <motion.div
-                  className='absolute bottom-0 left-0 right-0 h-0.5 bg-blue-500'
+                  className='absolute bottom-0 left-0 right-0 h-0.5 mb-1 bg-blue-500'
                   layoutId='activeTab'
                   transition={{ type: 'spring', stiffness: 500, damping: 30 }}
                 />

@@ -96,7 +96,7 @@ const ResultsSection: React.FC<ResultsSectionProps> = ({
 
   return (
     <div
-      className=' bg-gradient-to-b from-blue-600 to-blue-500/90 
+      className=' bg-gradient-to-b from-gray-900 to-blue-300/60 border-2 border-gray-700 
     rounded-3xl shadow-[0px_10px_25px_-5px_rgb(59_130_246_/_0.3)] pt-5 pb-6 px-4'
     >
       <div className='flex flex-row items-center mb-2 justify-center'>
@@ -113,7 +113,7 @@ const ResultsSection: React.FC<ResultsSectionProps> = ({
             peer-checked:after:translate-x-full peer-checked:after:border-white 
             after:content-[''] after:absolute after:top-[2px] after:left-[2px] 
             after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all
-            peer-checked:bg-red-600"
+            peer-checked:bg-blue-600"
           ></div>
         </label>
         <span className='text-white text-md font-semibold ml-2'>
@@ -153,11 +153,11 @@ const ResultsSection: React.FC<ResultsSectionProps> = ({
               className=' flex items-center rounded-full justify-center bg-blue-100 gap-2 hover:bg-blue-200 transition-colors'
             >
               <ChevronsDown
-                className={`h-4 w-4 transition-transform duration-500 text-blue-600 ${
+                className={`h-4 w-4 transition-transform duration-500 text-grey-900 ${
                   isOpen ? 'rotate-180' : ''
                 }`}
               />
-              <span className=' text-blue-600'>
+              <span className=' text-grey-900'>
                 {isOpen ? 'Show Less' : 'Show More'}
               </span>
             </Button>

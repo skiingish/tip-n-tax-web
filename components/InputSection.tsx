@@ -16,17 +16,17 @@ const InputSection: React.FC<InputSectionProps> = ({ onAmountChange }) => {
 
   return (
     <motion.div
-      className='flex flex-col items-center pt-5 pb-6 px-4 rounded-3xl gap-2'
+      className='flex flex-col items-center pt-5 pb-6 px-4 rounded-3xl gap-2 border-2 border-gray-700'
       animate={{
         background:
           isLocationSelectionFocused || isFocusedMoneyInput
             ? [
-                'linear-gradient(0deg, rgb(147 197 253 / 0.7), rgb(59 130 246))',
-                'linear-gradient(180deg, rgb(147 197 253 / 0.7), rgb(59 130 246))',
+                'linear-gradient(0deg, rgb(147 197 253 / 0.6), rgb(17, 24, 39))',
+                'linear-gradient(180deg, rgb(147 197 253 / 0.6), rgb(17, 24, 39))',
               ]
             : [
-                'linear-gradient(180deg, rgb(147 197 253 / 0.7), rgb(59 130 246))',
-                'linear-gradient(0deg, rgb(147 197 253 / 0.7), rgb(59 130 246))',
+                'linear-gradient(180deg, rgb(147 197 253 / 0.6), rgb(17, 24, 39))',
+                'linear-gradient(0deg, rgb(147 197 253 / 0.6), rgb(17, 24, 39))',
               ],
         boxShadow:
           isLocationSelectionFocused || isFocusedMoneyInput
