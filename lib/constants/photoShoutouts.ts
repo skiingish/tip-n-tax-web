@@ -1,0 +1,5 @@
+export const photoShoutouts = {
+    alberta: 'Photo by <a href="https://unsplash.com/@mydreamsforsale?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Beyon Binu</a> on <a href="https://unsplash.com/photos/a-group-of-people-sitting-on-a-rocky-beach-by-a-body-of-water-yCnQy-yolCM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
+    bc: 'Photo by <a href="https://unsplash.com/@kaprion?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dmitry Spravko</a> on <a href="https://unsplash.com/photos/a-suspension-bridge-in-the-middle-of-a-forest-Zso54TmmioY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
+    bc2: 'Photo by <a href="https://unsplash.com/@mslucyclaire?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lucy Claire</a> on <a href="https://unsplash.com/photos/round-black-and-white-analog-wall-clock-anEgzevL0Pk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
+};

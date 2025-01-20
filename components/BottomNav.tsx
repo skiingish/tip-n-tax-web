@@ -2,11 +2,13 @@
 
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { Cog, Calculator } from 'lucide-react';
+import { Cog, Calculator, Info, PiggyBank } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const navItems = [
   { icon: Calculator, label: 'Calculator', href: '/' },
+  { icon: Info, label: 'Info', href: '/info' },
+  { icon: PiggyBank, label: 'Tax Rates', href: '/tax-rates' },
   //{ icon: Camera, label: 'Camera', href: '/camera' },
   { icon: Cog, label: 'Settings', href: '/settings' },
 ];

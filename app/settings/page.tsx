@@ -15,7 +15,7 @@ export default function Settings() {
   const { currency, setCurrency } = useSettingsStore();
 
   return (
-    <div className='p-4 max-w-sm mx-auto'>
+    <div className='p-4 lg:max-w-[30rem] w-[calc(100vw-2.5rem)] mx-auto'>
       <h1 className='text-2xl font-bold mb-6 text-center text-white'>
         Settings
       </h1>
