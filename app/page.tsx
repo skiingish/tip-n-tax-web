@@ -1,6 +1,7 @@
 'use client';
 
 import InputSection from '@/components/InputSection';
+import InstallPrompt from '@/components/InstallPrompt';
 import ResultsSection from '@/components/ResultsSection';
 import TipSection from '@/components/TipSection';
 import { useState } from 'react';
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <div className='flex flex-col lg:max-w-[30rem] w-[calc(100vw-2.5rem)] mx-auto gap-5'>
       <div className='pt-4'>
+        <InstallPrompt />
         <h1 className='text-2xl font-bold last:text-center text-white'>
           Tip N Tax - Canada
         </h1>
