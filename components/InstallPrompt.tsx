@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { Download } from 'lucide-react';
+import { Download, Share, SquarePlus } from 'lucide-react';
 
 interface IBeforeInstallPromptEvent extends Event {
   readonly platforms: string[];
@@ -73,19 +73,16 @@ export default function InstallPrompt() {
 
   if (isIOS) {
     return (
-      <div className='text-white text-center'>
+      <div className='text-white text-center p-2'>
         <p>
-          To install this app on your iOS device, tap the share button
-          <span role='img' aria-label='share icon'>
-            {' '}
-            ⎋{' '}
-          </span>
-          and then &quot;Add to Home Screen&quot;
-          <span role='img' aria-label='plus icon'>
-            {' '}
-            ➕{' '}
-          </span>
-          .
+          To install app on your iOS device, tap the share button{' '}
+          <Share className='inline-block' size={16} aria-label='share icon' />{' '}
+          and then &quot;Add to Home Screen&quot;{' '}
+          <SquarePlus
+            className='inline-block'
+            size={16}
+            aria-label='plus icon'
+          />
         </p>
       </div>
     );
